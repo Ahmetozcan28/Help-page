@@ -14,7 +14,8 @@
 body {
   background-color: #f6f8fc;
   height: 100vh;
- margin-top: 209px;
+  display: grid;
+  place-items: center;
 }
 .help-body-container {
   display: flex;
@@ -65,6 +66,12 @@ form input {
     margin-bottom: 0;
   }
 }
+.dropdown-container li {
+    margin-bottom: 25px;
+    &:last-child label {
+        border-bottom: none;
+    }
+  }
 .dropdown-container li label {
   display: flex;
   justify-content: space-between;
