@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+
+  &:focus {
+    outline: 0;
+  }
+}
+body {
+  background-color: #f6f8fc;
+  height: 100vh;
+ margin-top: 209px;
+}
+.help-body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.help-body-container h3 {
+  font-size: 24px;
+  color: #202842;
+  font-weight: bold;
+  margin-bottom: 52px;
+  text-align: center;
+}
+
+.inner {
+  width: 558px;
+}
+form {
+  position: relative;
+  margin-bottom: 63px;
+}
+form .icon {
+  position: absolute;
+  width: 68px;
+  height: 63px;
+  display: grid;
+  place-items: center;
+}
+form input {
+  background-color: #ffff;
+  width: 100%;
+  height: 63px;
+  border-radius: 10px;
+  box-shadow: 0 9px 10px -4px rgba(201, 214, 239, 0.46);
+  font-size: 16px;
+  color: #202842;
+  padding: 0px 20px 0px 68px;
+  &::placeholder {
+    color: #828d97;
+  }
+}
+.dropdown-container {
+  margin-bottom: 70px;
+}
+.dropdown-container li {
+  margin-bottom: 25px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.dropdown-container li label {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 51px;
+  border-bottom: 2px solid #dee4f1;
+  font-size: 18px;
+  padding-top: 5px;
+  color: #202842;
+  cursor: pointer;
+}
+.dropdown-container li label img {
+  transition: 300ms all;
+}
+.dropdown-container li .dropdown-content {
+  display: none;
+  color: rgba(32, 40, 66, 0.6);
+  padding: 15px 0px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.dropdown-container li input {
+  display: none;
+  &:checked + label + .dropdown-content {
+    display: block;
+  }
+}
+.dropdown-container li input {
+  &:checked + label img {
+    transform: rotate(-180deg);
+  }
+}
+.help-articles {
+  width: 838px;
+}
+.help-articles ul {
+  display: flex;
+  margin: 0 calc(-34px / 2);
+}
+.help-articles ul li {
+  margin: 0 calc(35px / 2);
+}
+.help-articles ul li a {
+  display: block;
+  box-shadow: 0 9px 10px -4px rgba(201, 214, 239, 0.46);
+  background: #ffff;
+  border-radius: 10px;
+  transition: 300ms all;
+}
+.help-articles ul li a:hover {
+  transform: scale(1.04);
+}
+.help-articles ul li a img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  display: block;
+  height: 128px;
+  object-fit: cover;
+}
+
+.help-articles ul li a .title {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #202842;
+}
